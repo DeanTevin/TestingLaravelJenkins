@@ -11,7 +11,9 @@ services:
     volumes:
       - .:/var/www/html
   composer:
-    image: composer:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     volumes:
       - .:/app
     working_dir: /app
