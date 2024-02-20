@@ -1,8 +1,6 @@
 # Use an official PHP runtime as a parent image
 FROM php:7.4-fpm
 
-#composer add
-FROM composer:latest
 
 # Set the working directory in the container
 WORKDIR /var/www/html
