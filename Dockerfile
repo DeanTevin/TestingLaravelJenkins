@@ -13,6 +13,7 @@ RUN apt-get update && \
     apt-get install -y \
     git \
     unzip \
+    libicu-dev \
     && docker-php-ext-install pdo pdo_mysql gettext intl
 
 # Install Composer
